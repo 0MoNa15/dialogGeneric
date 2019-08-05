@@ -13,7 +13,6 @@ import com.example.dialoggeneric.Util.Internet.ValidInternetConnection
 
 class MainActivity : AppCompatActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -36,10 +35,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openDialog(view : View){
-        /*val dialgo = DialogFullscreen()
-        val fm = this@MainActivity.fragmentManager
-        dialgo.show(fm, "name")*/
-
         val dialogFragment = DialogFullscreen()
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.addToBackStack(null)
