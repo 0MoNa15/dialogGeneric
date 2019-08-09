@@ -20,8 +20,6 @@ class DialogFullscreen : DialogFragment() {
         super.onCreateView(inflater, container, savedInstanceState)
         val view : View = inflater.inflate(R.layout.fullscreen_dialog, container, false)
 
-
-
         return view
     }
 }
